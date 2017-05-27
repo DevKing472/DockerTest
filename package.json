@@ -1,0 +1,12 @@
+{
+  "name": "dockertest",
+  "version": "1.0.0",
+  "description": "Test out using Docker with a Node project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Wells Lucas Santo",
+  "license": "ISC"
+}
