@@ -77,3 +77,30 @@ docker run username/repository:tag
 Essentially, this means you can run any publicly available Docker image (which spins
 off and runs some useful services) and all you need to have is Docker installed on
 your machine! Nothing else! 
+
+# Others
+
+Some more helpful things:
+
+You can add entire directories of files at once in your Dockerfile by doing:
+
+```
+COPY . /dirnameindocker/
+```
+
+You can ignore files to add (think sensitive files, git files, etc.) by
+adding a `.dockerignore` to your local directory.
+
+You can change directories in the Docker container by doing:
+
+```
+WORKDIR /direnameindocker/
+```
+
+You can define environment variables by doing:
+
+```
+ENV THISISAVARIABLE thisisavalue
+```
+
+Read more about Dockerfiles [here](https://docs.docker.com/engine/reference/builder/)
